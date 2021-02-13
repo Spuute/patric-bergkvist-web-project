@@ -28,3 +28,10 @@ Jag har även skapat de mest basic grundpelarna i css filen så man kan börja b
 ## 2021-02-13 kl.08.12
 
      Målet för dagen är att välja ut ett WEBAPI att hämta data från, samt kolla närmare på dokumentationen för okta, samt kolla om det finns några alternativ värda att använda.
+
+## 2021-02-14 kl.00.18
+
+     Jag har hittat ett WEBAPI som verkar intressant;
+
+          * https://gitlab.com/dword4/nhlapi/-/blob/master/stats-api.md
+          * https://github.com/erunion/sport-api-specifications/tree/master/nhl
