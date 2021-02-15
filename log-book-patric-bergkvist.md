@@ -25,13 +25,19 @@ Jag har även skapat de mest basic grundpelarna i css filen så man kan börja b
 
     * Jag har sedan separata selectors för varje enskild av dessa som jag till en början har för att sätta en font-size, denna är anvgiven i % och har då 20px som jag tidigare tilldelade font-size i html som bas. (h1 250% = 20 * 2,5 = 50px). Selectorn för alla 3 h element har gemensamma egenskaper för alla element, medan de separata h selector lägger till specifika egenskaper utöver de gemensamma.
 
-## 2021-02-13 kl.08.12
+## 2021-02-13 kl.08:12
 
      Målet för dagen är att välja ut ett WEBAPI att hämta data från, samt kolla närmare på dokumentationen för okta, samt kolla om det finns några alternativ värda att använda.
 
-## 2021-02-14 kl.00.18
+## 2021-02-14 kl.00:18
 
      Jag har hittat ett WEBAPI som verkar intressant;
 
           * https://gitlab.com/dword4/nhlapi/-/blob/master/stats-api.md
           * https://github.com/erunion/sport-api-specifications/tree/master/nhl
+
+## 2021-02-15 kl.08:19
+
+     Målen för helgen lyckades uppnås, men då jag inte kände mig riktigt nöjd med valet av WEBAPI så har jag letat vidare och nu kommit fram till att jag ska testa ge mig på SMHI´s API.
+
+     Mål för dagen: Börja fundera på / skissa upp en design för hemsidan så jag får en bild av hur jag ska bygga upp den. Ska försöka få en skiss jag är nöjd med och påbörja bygget av siten.
