@@ -9,8 +9,8 @@
 }
 
 html {
-  color: #444;
-  font-family: "Arial", sans-serif;
+  color: #a8b2be;
+  font-family: "Roboto", "Arial", sans-serif;
   font-weight: 300;
   font-size: 20px;
 }
@@ -65,13 +65,13 @@ nav {
   align-items: center;
   min-height: 50px;
   background-color: #2e445b;
-  z-index: 2;
+  z-index: 1;
 }
 
 .logo h3 {
   color: #02dac5;
   letter-spacing: 5px;
-  font-size: 80%;
+  font-size: 90%;
 }
 
 .main-navigation {
@@ -89,7 +89,7 @@ nav {
   text-decoration: none;
   letter-spacing: 3px;
   font-weight: 500;
-  font-size: 60%;
+  font-size: 80%;
 }
 
 .mobile-menu {
@@ -118,6 +118,7 @@ nav {
   border-bottom-left-radius: 20px;
   backdrop-filter: blur(20px);
   box-shadow: 2px 2px 50px #222;
+  margin-bottom: 50px;
 }
 
 .heading {
@@ -140,7 +141,7 @@ nav {
 
 .small-box {
   background-color: rgba(255, 255, 255, 0.1);
-  color: white;
+  color: rgb(204, 204, 204);
   height: 400px;
   overflow-y: auto;
   border-top-right-radius: 20px;
