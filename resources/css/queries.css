@@ -1,11 +1,10 @@
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
   .main-navigation {
     width: 30%;
   }
 
   .row {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 0 40px;
   }
 
   .heading {
@@ -14,6 +13,10 @@
 
   .in-box-heading {
     margin: 0;
+  }
+
+  .box-padding {
+    padding: 40px;
   }
 }
 
