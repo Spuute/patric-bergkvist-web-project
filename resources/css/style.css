@@ -10,8 +10,7 @@
 
 html {
   color: #a8b2be;
-  font-family: "Roboto", "Arial", sans-serif;
-  font-weight: 300;
+  font-family: "Poppins", "Arial", sans-serif;
   font-size: 20px;
 }
 
@@ -53,59 +52,7 @@ h3 {
 }
 
 /* --------------------------------------------------- */
-/*                     NAVIGATION                      */
-/* --------------------------------------------------- */
-
-nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 50px;
-  background-color: #2e445b;
-  z-index: 1;
-}
-
-.logo h3 {
-  color: #02dac5;
-  letter-spacing: 5px;
-  font-size: 90%;
-}
-
-.main-navigation {
-  display: flex;
-  justify-content: space-around;
-  width: 30%;
-}
-
-.main-navigation li {
-  list-style: none;
-}
-
-.main-navigation a {
-  color: #02dac5;
-  text-decoration: none;
-  letter-spacing: 3px;
-  font-weight: 500;
-  font-size: 80%;
-}
-
-.mobile-menu {
-  display: none;
-  cursor: pointer;
-}
-
-.mobile-menu div {
-  width: 20px;
-  height: 2px;
-  background-color: #02dac5;
-  margin: 2px;
-}
-
-/* --------------------------------------------------- */
-/*                    LANDING PAGE                     */
+/*                      REUSABLE                       */
 /* --------------------------------------------------- */
 
 .big-box {
@@ -129,8 +76,9 @@ nav {
 
 .heading h2 {
   color: #02b8a7;
-  padding: 10px;
+  padding: 1px;
   text-align: center;
+  font-size: 100%;
 }
 
 .heading h3 {
@@ -158,26 +106,112 @@ nav {
   padding: 25px;
 }
 
+/* --------------------------------------------------- */
+/*                     NAVIGATION                      */
+/* --------------------------------------------------- */
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 50px;
+  background-color: #2e445b;
+  z-index: 1;
+}
+
+.logo h3 {
+  color: #02dac5;
+  letter-spacing: 5px;
+  font-size: 90%;
+  text-shadow: greenyellow;
+}
+
+.main-navigation {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+
+.main-navigation li {
+  list-style: none;
+}
+
+.main-navigation a {
+  color: #02dac5;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: 700;
+  font-size: 60%;
+  text-transform: uppercase;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 20px;
+  height: 2px;
+  background-color: #02dac5;
+  margin: 2px;
+}
+
+/* --------------------------------------------------- */
+/*                      ABOUT ME                       */
+/* --------------------------------------------------- */
+
+.big-box1 p {
+  padding: 40px;
+  font-weight: 100;
+  font-size: 80%;
+}
+
 .profile-img-box {
-  background: linear-gradient(45deg, #e6646410, #9198e520);
+  background: linear-gradient(to top right, #2980b9, #2c3e50);
+  border-bottom: 1px solid white;
   height: 400px;
   text-align: center;
 }
 
-.profile-img-box img {
+.image-container {
+  display: block;
+  text-align: right;
+}
+
+.image-container img {
+  margin: 60px 0;
   height: 250px;
   width: auto;
   border-radius: 50%;
-  float: left;
   display: inline-block;
-  margin-top: 70px;
-  margin-left: 260px;
-  box-shadow: 1px 1px 150px rgb(231, 175, 53, 0.5);
+  box-shadow: 1px 1px 15px #000;
   border: 1px solid #000;
 }
 
 .profile-img-box h3 {
-  float: right;
-  margin-top: 120px;
-  margin-right: 300px;
+  padding-left: 40px;
+  text-align: left;
+}
+
+.text-box {
+  padding: 150px 0;
+}
+
+.profile-img-box p {
+  font-size: 80%;
+  font-weight: 100;
+  text-align: justify;
+  padding: 0 40px;
+}
+
+.profile-img-box p::after {
+  display: block;
+  content: "";
+  border-bottom: 1px solid #fff;
+  padding-top: 5px;
+  width: 23%;
 }
