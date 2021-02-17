@@ -1,3 +1,9 @@
+## 2021-02-17 kl.07:56
+
+     Gårdagen flöt på väldigt bra och designen är i princip helt färdig till landingpage. Det enda som är kvar där är att fylla ut med lite vettig text, men det tar jag som sagt i slutet när allting annat är färdigt.
+
+     Målet för dagen är att få färdigt **Om mig** sidan, och i bästa av världar hinna påbörja den sida som ska innehålla datan från API anropen som ska visas efter man har loggat in.
+
 ## 2021-02-16 kl.13:06
 
      Jag glömde helt bort loggboken imorse, jag var så ivrig på att köra igång! Men jag började iallafall skissa på en design till hemsidan, men insåg snabbt att jag kommer vilja free-style:a lite. Har så många idéer för utseende och kommer att ta det lite som det kommer, se vad som passar bäst för mitt ändamål med hemsidan.
