@@ -126,7 +126,6 @@ nav {
   color: #02dac5;
   letter-spacing: 5px;
   font-size: 90%;
-  text-shadow: greenyellow;
 }
 
 .main-navigation {
@@ -174,7 +173,7 @@ nav {
   background: linear-gradient(to top right, #2980b9, #2c3e50);
   border-bottom: 1px solid white;
   height: 400px;
-  text-align: center;
+  /*  text-align: center; */
 }
 
 .image-container {

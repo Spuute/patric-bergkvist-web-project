@@ -3,7 +3,7 @@
     width: 30%;
   }
 
-  .row {
+  .outer {
     margin: 0 40px;
   }
 
@@ -50,4 +50,19 @@
 
 .mobile-nav-active {
   transform: translateX(0%);
+}
+
+@media screen and (max-width: 640px) {
+  .profile-img-box {
+    height: 200px;
+  }
+
+  .text-box {
+    padding: 40px 0;
+  }
+
+  .image-container img {
+    margin: 15px 0;
+    height: 150px;
+  }
 }
