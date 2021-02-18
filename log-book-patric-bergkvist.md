@@ -1,3 +1,9 @@
+## 2021-02-18 kl.07:42
+
+     Jag kom långt på about me sidan igår, den är i princip färdig, men jag kommer att lägga mer tid på den mot slutet när jag är klar med alla andra saker som är krav enligt specifikationen, samma sak gäller för alla sidor. Min plan just nu är att fylla på sidan med alla krav, och tiden som blir över när jag är klar med det kommer att läggas på att snygga till / förbättra hela sidan.
+
+     Planer för dagen är att fundera ut en matchande design för sidan där själva api-anropet ska ske samt data ska presenteras. Jag är nöjd om jag kommer fram till en design att köra på. Tanke och förhoppningn är att ha hela den sidan färdig innan Måndag.
+
 ## 2021-02-17 kl.07:56
 
      Gårdagen flöt på väldigt bra och designen är i princip helt färdig till landingpage. Det enda som är kvar där är att fylla ut med lite vettig text, men det tar jag som sagt i slutet när allting annat är färdigt.
