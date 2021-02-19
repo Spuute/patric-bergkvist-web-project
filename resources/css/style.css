@@ -101,9 +101,12 @@ h3 {
 .box-padding {
   padding: 40px;
 }
-
+/*
 .text {
   padding: 25px;
+}
+*/
+.text p {
 }
 
 /* --------------------------------------------------- */
@@ -213,4 +216,51 @@ nav {
   border-bottom: 1px solid #fff;
   padding-top: 5px;
   width: 23%;
+}
+
+/* --------------------------------------------------- */
+/*                      WEATHER                        */
+/* --------------------------------------------------- */
+
+.weather-box {
+  background: linear-gradient(to top right, #2980b9, #2c3e5050); /* Remove the last 50 */
+  height: 400px;
+  margin-top: 100px;
+  border-radius: 25px;
+}
+.top-left {
+  max-width: 100%;
+}
+
+.top-left h2 {
+  padding-left: 20px;
+  padding-top: 20px;
+  line-height: 20px;
+  font-weight: 300;
+}
+
+.top-left p {
+  padding-top: 1px;
+  padding-left: 20px;
+  margin: 0;
+  font-size: 70%;
+  letter-spacing: 2.6px;
+}
+
+.top-right {
+  text-align: right;
+  max-width: 100%;
+}
+
+.top-right h2 {
+  font-size: 800%;
+  line-height: 110px;
+  padding-top: 20px;
+  font-weight: 100;
+  /* padding-right: 20px; */
+  margin-bottom: 100px;
+}
+
+.aa {
+  text-align: center;
 }
