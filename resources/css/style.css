@@ -68,23 +68,24 @@ h3 {
   margin-bottom: 50px;
 }
 
-.heading {
+.box-heading {
   background-color: #395572;
   box-shadow: 0 -1px 0.5px rgba(255, 255, 255, 0.24), inset 0 -1px 1px rgba(0, 0, 0, 0.5);
   border-top-right-radius: 20px;
 }
 
-.heading h2 {
+.box-heading h2 {
+  color: #02b8a7;
+  padding: 1px;
+  text-align: center;
+  font-size: 120%;
+}
+
+.box-heading h3 {
   color: #02b8a7;
   padding: 1px;
   text-align: center;
   font-size: 100%;
-}
-
-.heading h3 {
-  color: #02b8a7;
-  padding: 10px;
-  text-align: center;
 }
 
 .small-box {
@@ -101,11 +102,12 @@ h3 {
 .box-padding {
   padding: 40px;
 }
-/*
+
 .text {
   padding: 25px;
+  font-size: 70%;
+  color: #222;
 }
-*/
 
 /* --------------------------------------------------- */
 /*                     NAVIGATION                      */
@@ -164,9 +166,9 @@ nav {
 /*                      ABOUT ME                       */
 /* --------------------------------------------------- */
 
-.big-box1 p {
+.about-me-info {
   padding: 40px;
-  font-weight: 100;
+  font-weight: 300;
   font-size: 80%;
 }
 
@@ -197,14 +199,17 @@ nav {
   text-align: left;
 }
 
-.text-box {
+.profile-text-box {
   padding: 150px 0;
+}
+
+.profile-text-box p {
+  font-size: 70%;
 }
 
 .profile-img-box p {
   font-size: 80%;
   font-weight: 100;
-  text-align: justify;
   padding: 0 40px;
 }
 
