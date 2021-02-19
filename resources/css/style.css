@@ -106,8 +106,6 @@ h3 {
   padding: 25px;
 }
 */
-.text p {
-}
 
 /* --------------------------------------------------- */
 /*                     NAVIGATION                      */
@@ -224,22 +222,27 @@ nav {
 
 .weather-box {
   background: linear-gradient(to top right, #2980b9, #2c3e5050); /* Remove the last 50 */
-  height: 400px;
   margin-top: 100px;
   border-radius: 25px;
 }
 .top-left {
   max-width: 100%;
+  padding-left: 20px;
+  padding-top: 20px;
 }
 
 .top-left h2 {
+  text-shadow: 1px 2px #333;
+  color: white;
   padding-left: 20px;
   padding-top: 20px;
   line-height: 20px;
   font-weight: 300;
+  letter-spacing: 5px;
 }
 
-.top-left p {
+.todays-date {
+  color: white;
   padding-top: 1px;
   padding-left: 20px;
   margin: 0;
@@ -250,9 +253,13 @@ nav {
 .top-right {
   text-align: right;
   max-width: 100%;
+  padding-right: 20px;
+  padding-top: 20px;
 }
 
 .top-right h2 {
+  text-shadow: 1px 2px #333;
+  color: white;
   font-size: 800%;
   line-height: 110px;
   padding-top: 20px;
@@ -263,4 +270,41 @@ nav {
 
 .aa {
   text-align: center;
+}
+
+.line::before {
+  content: "";
+  display: block;
+  margin-top: 300px;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 300px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.bar {
+  font-size: 200%;
+}
+
+.next-hour {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.next-temp {
+  margin-top: 10px;
+}
+
+.big-icon {
+  font-size: 400%;
+  color: white;
+  text-shadow: 1px 1px black;
+  padding-left: 40px;
+  margin-top: 20px;
+}
+
+.weather-info {
+  font-size: 150%;
+  padding-left: 40px;
+  margin-top: 20px;
 }

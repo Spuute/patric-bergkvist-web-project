@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, minimal-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="vendors/css/grid.css" />
-    <link rel="stylesheet" type="text/css" href="resources/css/queries.css" />
     <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/queries.css" />
+    <link rel="stylesheet" type="text/css" href="vendors/css/weather-icons.css" />
     <!--MOVE UP ONE LINE-->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,300;1,700&display=swap" rel="stylesheet" />
@@ -35,19 +36,49 @@
         <div class="col span-2-of-2 weather-box">
           <div class="col span-1-of-2 top-left">
             <h2>Lysekil</h2>
-            <p>18 Februari 2021</p>
+            <p class="todays-date">18 Februari 2021</p>
+            <i class="wi wi-night-sleet big-icon"></i>
+            <p class="weather-info">Mulet</p>
           </div>
           <div class="col span-1-of-2 top-right">
-            <h2>31°</h2>
+            <h2 class="current-weather">31°</h2>
           </div>
-          <div class="col span-1-of-6 aa">a</div>
-          <div class="col span-1-of-6 aa">a</div>
-          <div class="col span-1-of-6 aa">a</div>
-          <div class="col span-1-of-6 aa">a</div>
-          <div class="col span-1-of-6 aa">a</div>
-          <div class="col span-1-of-6 aa">a</div>
+          <div class="row line">
+            <div class="col span-1-of-6 aa">
+              <p class="next-hour plus-one">16:00</p>
+              <i class="wi wi-night-sleet bar"></i>
+              <p class="next-temp">23°</p>
+            </div>
+            <div class="col span-1-of-6 aa">
+              <p class="next-hour plus-two">17:00</p>
+              <i class="wi wi-night-sleet bar"></i>
+              <p class="next-temp">23°</p>
+            </div>
+            <div class="col span-1-of-6 aa">
+              <p class="next-hour plus-three">18:00</p>
+              <i class="wi wi-night-sleet bar"></i>
+              <p class="next-temp">23°</p>
+            </div>
+            <div class="col span-1-of-6 aa">
+              <p class="next-hour plus-four">19:00</p>
+              <i class="wi wi-night-sleet bar"></i>
+              <p class="next-temp">23°</p>
+            </div>
+            <div class="col span-1-of-6 aa">
+              <p class="next-hour plus-five">20:00</p>
+              <i class="wi wi-night-sleet bar"></i>
+              <p class="next-temp">23°</p>
+            </div>
+            <div class="col span-1-of-6 aa">
+              <p class="next-hour plus-six">21:00</p>
+              <i class="wi wi-night-sleet bar"></i>
+              <p class="next-temp">23°</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+    <script src="resources/js/script.js"></script>
+    <script src="resources/js/mobile-nav.js"></script>
   </body>
 </html>
