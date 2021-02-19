@@ -1,3 +1,7 @@
+## 2021-02-18 kl.09:01
+
+     Jag hann påbörja design av väderpresentationen igår, men jag inser att jag inte riktigt kan bestämma mig för hur jag vill att den ska se ut, så dagen idag kommer att ägnas åt att testa lite olika designer för att få en bild av vad som kan tänkas passa bäst.
+
 ## 2021-02-18 kl.07:42
 
      Jag kom långt på about me sidan igår, den är i princip färdig, men jag kommer att lägga mer tid på den mot slutet när jag är klar med alla andra saker som är krav enligt specifikationen, samma sak gäller för alla sidor. Min plan just nu är att fylla på sidan med alla krav, och tiden som blir över när jag är klar med det kommer att läggas på att snygga till / förbättra hela sidan.
