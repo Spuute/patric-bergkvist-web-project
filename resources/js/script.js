@@ -3,18 +3,47 @@
   const json = await response.json();
   console.log(json);
 
-  const now = json.timeSeries[0].parameters[11].values[0];
+  const tempNow = json.timeSeries[0].parameters[11].values[0];
   const sight = json.timeSeries[0].parameters[12].values[0];
   const icon = json.timeSeries[0].parameters[18].values[0];
   const whatIcon = convertToWeather(icon);
-  console.log(now);
-  document.querySelector(".current-weather").textContent = `${now}°`;
+
+  //FIXME: Take a look and see if it is possible to get the code below cleaner.
+
+  document.querySelector(".current-weather").textContent = `${tempNow}°`;
   document.querySelector(".weather-info").textContent = whatIcon;
   //document.querySelector("#sikt").textContent = `Klar sikt i ${sight} km!`;
-
   document.querySelector(".wi-night-sleet").classList.add("wi-cloudy");
   document.querySelector(".wi-night-sleet").classList.remove("wi-night-sleet");
+  document.querySelector(".temp-plus-one").textContent = `${json.timeSeries[1].parameters[11].values[0]}°`;
+  document.querySelector(".temp-plus-two").textContent = `${json.timeSeries[2].parameters[11].values[0]}°`;
+  document.querySelector(".temp-plus-three").textContent = `${json.timeSeries[3].parameters[11].values[0]}°`;
+  document.querySelector(".temp-plus-four").textContent = `${json.timeSeries[4].parameters[11].values[0]}°`;
+  document.querySelector(".temp-plus-five").textContent = `${json.timeSeries[5].parameters[11].values[0]}°`;
+  document.querySelector(".temp-plus-six").textContent = `${json.timeSeries[6].parameters[1].values[0]}°`;
+
+  // Select every div with the class "plus" and add them to a variable. Logging this gives a nodeList.
+  let timeSpans = document.querySelectorAll(".plus");
+
+  // Iterate through the length of timeSpans and get the current DateTime and parsing it, then send the data to the function to convert it to HH:MM and finally add them as text with DOM Manipulation.
+  for (let i = 0; i < timeSpans.length; i++) {
+    let getDateTime = json.timeSeries[i].validTime;
+    let parseDateTime = new Date(Date.parse(getDateTime));
+    let hourMinutes = convertTime(parseDateTime);
+    timeSpans[i].textContent = hourMinutes;
+  }
 })();
+
+// Function to extract HH:MM from json converted dateTime.
+function convertTime(time) {
+  let hour = time.getHours();
+  let minutes = time.getMinutes();
+  // getMinutes only returns a single int so to get the time to show as e.g. 10:09 we need this if statement.
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+  return `${hour}:${minutes}`;
+}
 
 let weather = "";
 
