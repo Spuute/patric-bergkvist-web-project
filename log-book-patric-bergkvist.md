@@ -1,3 +1,13 @@
+## 2021-02-20 kl.10:08
+
+     Igår missade jag att uppdatera loggboken. Men jag har gjort fina framsteg. Jag fick sitta ganska länge igår med att försöka lösa så vädret på weather.html visade temperatur och tid för de kommande sex timmarna. Det var många resor fram och tillbaka innan jag fick det att fungera.
+
+     Jag fick började med att skapa en variabel timeSpans där jag använder querySelectorALL som går in och hämtar alla klasser med taggen ".plus", vilket i mitt fall är varje column som innehåller data om 6 kommande timmar. Kör man en console.log på den så kommer man att få ut en så kallad nodeList, ett object med alla klasserna. Denna används senare för att iterera igenom och i varje iteration skriva ut rätt data i rätt column.
+     Inne i samma loop så hämtar jag ut dateTime för varje timme och parsar från json timeformat och skickar in till en funktion "convertTime" för att extrahera tiden följande format "HH:MM".
+     Jag är väldigt nöjd med denna lösning, och jag fick slita mitt hår lite för att få det att fungera, men det känns skönt nu när den är på plats.
+
+     Planen för dagen är att försöka hålla lite koll på denna del och se så att den verkligen uppdaterar med korrekt data, och detta kommer jag att dubbelkolla mot SMHI´s app i telefonen. Jag ska även börja fundera på en lösning för att i samma veva byta ut varje väderikon mot korrekt ikon baserat på väderlek. Eventuellt även bygga ut sidan med mer data, men det är inte skrivet i sten ännu då jag tror kund är nöjd med vad som finns nu.
+
 ## 2021-02-18 kl.09:01
 
      Jag hann påbörja design av väderpresentationen igår, men jag inser att jag inte riktigt kan bestämma mig för hur jag vill att den ska se ut, så dagen idag kommer att ägnas åt att testa lite olika designer för att få en bild av vad som kan tänkas passa bäst.

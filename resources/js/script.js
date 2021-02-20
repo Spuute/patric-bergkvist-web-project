@@ -24,7 +24,7 @@
 
   // Select every div with the class "plus" and add them to a variable. Logging this gives a nodeList.
   let timeSpans = document.querySelectorAll(".plus");
-
+  console.log(typeof timeSpans);
   // Iterate through the length of timeSpans and get the current DateTime and parsing it, then send the data to the function to convert it to HH:MM and finally add them as text with DOM Manipulation.
   for (let i = 0; i < timeSpans.length; i++) {
     let getDateTime = json.timeSeries[i].validTime;
