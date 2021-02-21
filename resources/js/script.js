@@ -10,27 +10,36 @@
 
   //FIXME: Take a look and see if it is possible to get the code below cleaner.
 
-  document.querySelector(".current-weather").textContent = `${tempNow}°`;
-  document.querySelector(".weather-info").textContent = whatIcon;
+  //document.querySelector(".current-weather").textContent = `${tempNow}°`;
+  //document.querySelector(".weather-info").textContent = whatIcon;
   //document.querySelector("#sikt").textContent = `Klar sikt i ${sight} km!`;
-  document.querySelector(".wi-night-sleet").classList.add("wi-cloudy");
-  document.querySelector(".wi-night-sleet").classList.remove("wi-night-sleet");
-  document.querySelector(".temp-plus-one").textContent = `${json.timeSeries[1].parameters[11].values[0]}°`;
-  document.querySelector(".temp-plus-two").textContent = `${json.timeSeries[2].parameters[11].values[0]}°`;
-  document.querySelector(".temp-plus-three").textContent = `${json.timeSeries[3].parameters[11].values[0]}°`;
-  document.querySelector(".temp-plus-four").textContent = `${json.timeSeries[4].parameters[11].values[0]}°`;
-  document.querySelector(".temp-plus-five").textContent = `${json.timeSeries[5].parameters[11].values[0]}°`;
-  document.querySelector(".temp-plus-six").textContent = `${json.timeSeries[6].parameters[1].values[0]}°`;
+  //document.querySelector(".wi-night-sleet").classList.add("wi-cloudy");
+  //document.querySelector(".wi-night-sleet").classList.remove("wi-night-sleet");
+  //document.querySelector(".temp-plus-one").textContent = `${json.timeSeries[1].parameters[11].values[0]}°`;
+  //document.querySelector(".temp-plus-two").textContent = `${json.timeSeries[2].parameters[11].values[0]}°`;
+  //document.querySelector(".temp-plus-three").textContent = `${json.timeSeries[3].parameters[11].values[0]}°`;
+  //document.querySelector(".temp-plus-four").textContent = `${json.timeSeries[4].parameters[11].values[0]}°`;
+  //document.querySelector(".temp-plus-five").textContent = `${json.timeSeries[5].parameters[11].values[0]}°`;
+  //document.querySelector(".temp-plus-six").textContent = `${json.timeSeries[6].parameters[1].values[0]}°`;
 
   // Select every div with the class "plus" and add them to a variable. Logging this gives a nodeList.
   let timeSpans = document.querySelectorAll(".plus");
-  console.log(typeof timeSpans);
+  let tempSpans = document.querySelectorAll(".temp-plus");
+  console.log(tempSpans);
+  console.log(timeSpans);
   // Iterate through the length of timeSpans and get the current DateTime and parsing it, then send the data to the function to convert it to HH:MM and finally add them as text with DOM Manipulation.
   for (let i = 0; i < timeSpans.length; i++) {
     let getDateTime = json.timeSeries[i].validTime;
     let parseDateTime = new Date(Date.parse(getDateTime));
     let hourMinutes = convertTime(parseDateTime);
     timeSpans[i].textContent = hourMinutes;
+
+    json.timeSeries[i].parameters.forEach((obj) => {
+      if (obj.name === "t") {
+        tempSpans[i].textContent = obj.values[0];
+        console.log(obj.values[0]);
+      }
+    });
   }
 })();
 

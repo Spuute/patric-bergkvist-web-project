@@ -313,3 +313,13 @@ nav {
   padding-left: 40px;
   margin-top: 20px;
 }
+
+#okta-sign-in {
+  margin-top: 100px;
+  width: 800px;
+  border-radius: 20px;
+}
+
+.button-primary:hover {
+  background-color: greenyellow;
+}
