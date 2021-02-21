@@ -1,3 +1,9 @@
+## 2021-02-21 kl.19:24
+
+     Sent igårkväll upptäckte jag att temperaturen för de kommande 6 timmarna blev väldigt missvisande, några låg där dom skulle och andra visade 10-20 grader över den korrekta temperaturen. Jag började kolla runt lite och hittade ganska snabbt problemet, och det låg i datan jag får från SMHI´s API. Jag märkte att dom strukturerar om all data och plcerar det på olika platser, så det jag har hämtat ut som var temperatur från börjar kan bli precis vad som helst. Jag fick börja kolla efter lösningar för detta, och det slutade med att jag använde mig av en foreach loop där jag först anger vad i api anropet som den ska kolla igenom, och sen la jag till en if sats som säger att där obj.name === "t" ska hämta värdet och t i detta fall är temperatur, så nu kommer den alltid att hämta ut temperatur oavsett hur mycket omstrukturering som sker i SMHI´s API. Jag fick i samma veva ner koden från 10 rader till 4.
+
+     Jag har även lyckats style:a okta´s login widget genom att via developer tool kolla vilka klasser som används, sen har det bara varit att lägga in de klasserna i style.css. Anledningen till att detta fungerar är att jag i html filen lagt in okta´s css fil först av alla css filer, på så vis hämtar den först all data därifrån, sen override:ar den alla properties från style.css och applicerar dom.
+
 ## 2021-02-20 kl.10:08
 
      Igår missade jag att uppdatera loggboken. Men jag har gjort fina framsteg. Jag fick sitta ganska länge igår med att försöka lösa så vädret på weather.html visade temperatur och tid för de kommande sex timmarna. Det var många resor fram och tillbaka innan jag fick det att fungera.
