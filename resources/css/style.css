@@ -328,6 +328,15 @@ nav {
   border: none;
 }
 
+#okta-sign-in.auth-container.main-container {
+  background: linear-gradient(to top right, #297fb933, #2c3e502a); /* Remove the last 50 */
+
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  backdrop-filter: blur(20px);
+  box-shadow: 2px 2px 50px #222;
+}
+
 #okta-sign-in.auth-container .button-primary {
   background: #2e445b;
   color: #02dac5;
@@ -339,7 +348,7 @@ nav {
 #okta-sign-in.no-beacon .auth-content {
   color: #02b8a7;
   padding-top: 20px;
-  background: linear-gradient(to top right, #297fb9, #2c3e50); /* Remove the last 50 */
+  background: linear-gradient(to top right, #297fb933, #2c3e502a); /* Remove the last 50 */
 }
 
 #okta-sign-in.auth-container .okta-form-label {
