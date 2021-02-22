@@ -1,3 +1,7 @@
+## 2021-02-22 kl.10:14
+
+     Idag är planen att fixa till väder sidan så rätt ikoner visas för varje timme samt fixa till så nuvarande temperatur alltid visar korrekt temperatur. Om tid finns ska jag även kolla på om jag ska lägga in ikoner till mina sociala medier under "Om mig". Jag misstänker dock att det kommer att ta lite tid att fixa med ikonerna.
+
 ## 2021-02-21 kl.19:24
 
      Sent igårkväll upptäckte jag att temperaturen för de kommande 6 timmarna blev väldigt missvisande, några låg där dom skulle och andra visade 10-20 grader över den korrekta temperaturen. Jag började kolla runt lite och hittade ganska snabbt problemet, och det låg i datan jag får från SMHI´s API. Jag märkte att dom strukturerar om all data och plcerar det på olika platser, så det jag har hämtat ut som var temperatur från börjar kan bli precis vad som helst. Jag fick börja kolla efter lösningar för detta, och det slutade med att jag använde mig av en foreach loop där jag först anger vad i api anropet som den ska kolla igenom, och sen la jag till en if sats som säger att där obj.name === "t" ska hämta värdet och t i detta fall är temperatur, så nu kommer den alltid att hämta ut temperatur oavsett hur mycket omstrukturering som sker i SMHI´s API. Jag fick i samma veva ner koden från 10 rader till 4.
