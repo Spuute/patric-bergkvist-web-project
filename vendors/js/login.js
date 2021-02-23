@@ -4,7 +4,7 @@ const oktaSignIn = new OktaSignIn({
   authParams: {
     issuer: "https://dev-54117136.okta.com/oauth2/default",
   },
-  redirectUri: "http://127.0.0.1:5501/", // <-- ändra 8080 till den port din server har öppnat
+  redirectUri: "http://127.0.0.1:5501/",
 });
 
 oktaSignIn.authClient.token.getUserInfo().then(
