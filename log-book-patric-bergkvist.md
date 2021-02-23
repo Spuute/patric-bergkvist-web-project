@@ -1,6 +1,6 @@
 ## 2021-02-22 kl.10:14
 
-     Idag är planen att fixa till väder sidan så rätt ikoner visas för varje timme samt fixa till så nuvarande temperatur alltid visar korrekt temperatur. Om tid finns ska jag även kolla på om jag ska lägga in ikoner till mina sociala medier under "Om mig". Jag misstänker dock att det kommer att ta lite tid att fixa med ikonerna.
+Idag är planen att fixa till väder sidan så rätt ikoner visas för varje timme samt fixa till så nuvarande temperatur alltid visar korrekt temperatur. Om tid finns ska jag även kolla på om jag ska lägga in ikoner till mina sociala medier under "Om mig". Jag misstänker dock att det kommer att ta lite tid att fixa med ikonerna.
 
 ## 2021-02-21 kl.19:24
 
