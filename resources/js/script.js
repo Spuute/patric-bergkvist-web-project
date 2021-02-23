@@ -135,9 +135,9 @@ function convertToWeather(value) {
     weather = "Kraftigt snöfall";
     weatherIcon = "wi-snow-wind";
   }
-  const test = {
+  const weatherInfo = {
     name: weather,
     icon: weatherIcon,
   };
-  return test;
+  return weatherInfo;
 }
