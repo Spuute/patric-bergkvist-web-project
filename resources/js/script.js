@@ -1,10 +1,10 @@
 let currentW1eather = document.querySelector(".current-weather");
 let bigWeatherIcon = document.querySelector(".big-icon");
+let bigWeatherInfo = document.querySelector(".weather-info");
 
 (async function smhiData() {
   const response = await fetch("https://opendata-download-metfcst.smhi.se/api/category/pmp3g/version/2/geotype/point/lon/11.435558/lat/58.275573/data.json");
   const json = await response.json();
-  const icon = json.timeSeries[0].parameters[18].values[0];
 
   // Select every div with the classes "plus", "temp-plus" and "bar" and add them to a variable. Logging this gives a nodeList.
   const timeSpans = document.querySelectorAll(".plus");
@@ -30,8 +30,11 @@ let bigWeatherIcon = document.querySelector(".big-icon");
       if (obj.name === "Wsymb2") {
         const weatherInfo = obj.values[0];
         const weatherName = convertToWeather(weatherInfo);
-        bigWeatherIcon.classList.add(weatherName.icon);
-        bigWeatherIcon.classList.remove("wi-alien");
+        if (i === 0) {
+          bigWeatherIcon.classList.add(weatherName.icon);
+          bigWeatherIcon.classList.remove("wi-alien");
+          bigWeatherInfo.textContent = weatherName.name;
+        }
         weatherIcons[i].classList.add(weatherName.icon);
         weatherIcons[i].classList.remove("wi-alien");
       }

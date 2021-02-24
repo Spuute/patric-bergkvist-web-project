@@ -311,6 +311,8 @@ nav {
 .weather-info {
   font-size: 150%;
   padding-left: 40px;
+  color: white;
+
   margin-top: 20px;
 }
 
