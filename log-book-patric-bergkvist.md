@@ -1,3 +1,15 @@
+## 2021-02-24 kl.08.47
+
+Planen jag la upp i förrgår blev löst igår med push imorse, igår var en dag med migrän så det blev inte jätte mycket gjort men jag känner ändå att det är lugnt för jag ligger väldigt bra till och är i princip färdig.
+
+Min plan för idag är att kolla över vädersida för att lägga till så dagens datum alltid uppdateras baserat på dag, för just nu är den hårdkodad.
+
+Sen ska jag även börja kolla över responsiviteten i sidan, det finns några break-points där jag behöver justera lite på alla sidor.
+
+Jag ska gå över all kod och kolla så jag inte har några överblivna klasser som inte används som jag har lagt dit i test syfte, samt kolla om jag kan snygga upp koden på några ställen.
+
+I mån av tid ska jag även börja skriva en dokumentation i readme.md samt även kolla över alla tidigare inlägg i loggboken om det finns något ställe jag kan formatera texten för att framhäva den bättre.
+
 ## 2021-02-22 kl.10:14
 
 Idag är planen att fixa till väder sidan så rätt ikoner visas för varje timme samt fixa till så nuvarande temperatur alltid visar korrekt temperatur. Om tid finns ska jag även kolla på om jag ska lägga in ikoner till mina sociala medier under "Om mig". Jag misstänker dock att det kommer att ta lite tid att fixa med ikonerna.
