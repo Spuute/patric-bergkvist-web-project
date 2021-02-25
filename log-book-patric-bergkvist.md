@@ -1,3 +1,11 @@
+## 2021-02-25 kl.08:15
+
+Jag valde att plocka bort dagens datum under stadens namn för jag tycker sidan ser bättre ut utan den.
+
+Jag la även till "use strict"; i alla JavaScript filer, något jag missat att göra från början. Det kom med ES5 och innebär att man kör koden i strikt läge, vilket bland annat innebär att man inte kan anavända sig av odeklarerade variabler. I normala fall i JavaScript kan man utan problem köra variabler utan att deklarera dom, så om man exempelvis råkar stava fel på en variabel utan att se det så kan man sitta och debugga länge utan att hitta felet.
+
+Planen för dagen är väl i princip att fixa det jag inte hann med att göra igår, som att mobilanpassa sidan samt gå igenom all kod för att kolla överblivna klasser etc samt snygga upp koden. Planen är att ha hela sidan så gott som färdig ikväll så jag imorgon kan fokusera på att fixa videodokumentationen / presentationen av sidan.
+
 ## 2021-02-24 kl.08.47
 
 Planen jag la upp i förrgår blev löst igår med push imorse, igår var en dag med migrän så det blev inte jätte mycket gjort men jag känner ändå att det är lugnt för jag ligger väldigt bra till och är i princip färdig.
