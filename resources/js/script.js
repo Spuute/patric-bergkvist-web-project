@@ -1,21 +1,24 @@
+"use strict";
+
 let currentW1eather = document.querySelector(".current-weather");
 let bigWeatherIcon = document.querySelector(".big-icon");
 let bigWeatherInfo = document.querySelector(".weather-info");
+let weather = "";
+let weatherIcon = "";
+// Select every div with the classes "plus", "temp-plus" and "bar" and add them to a variable. Logging this gives a nodeList.
+const timeSpans = document.querySelectorAll(".plus");
+const tempSpans = document.querySelectorAll(".next-temp");
+const weatherIcons = document.querySelectorAll(".bar");
 
 (async function smhiData() {
   const response = await fetch("https://opendata-download-metfcst.smhi.se/api/category/pmp3g/version/2/geotype/point/lon/11.435558/lat/58.275573/data.json");
   const json = await response.json();
 
-  // Select every div with the classes "plus", "temp-plus" and "bar" and add them to a variable. Logging this gives a nodeList.
-  const timeSpans = document.querySelectorAll(".plus");
-  const tempSpans = document.querySelectorAll(".next-temp");
-  const weatherIcons = document.querySelectorAll(".bar");
-
   // Iterate through the length of timeSpans and get the current DateTime and parsing it, then send the data to the function to convert it to HH:MM and finally add them as text with DOM Manipulation.
-
   for (let i = 0; i < timeSpans.length; i++) {
     const getDateTime = json.timeSeries[i].validTime;
     const parseDateTime = new Date(Date.parse(getDateTime));
+    console.log(parseDateTime);
     const hourMinutes = convertTime(parseDateTime);
     timeSpans[i].textContent = hourMinutes;
 
@@ -50,11 +53,12 @@ function convertTime(time) {
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
+  if (hour < 10) {
+    hour = `0${hour}`;
+  }
   return `${hour}:${minutes}`;
 }
 
-let weather = "";
-let weatherIcon = "";
 function convertToWeather(value) {
   if (value === 1) {
     weather = "Klart väder";

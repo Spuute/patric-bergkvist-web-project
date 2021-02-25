@@ -1,3 +1,5 @@
+"use strict";
+
 const oktaSignIn = new OktaSignIn({
   baseUrl: "https://dev-54117136.okta.com",
   clientId: "0oa7se7mmYHFlw8wb5d6",
