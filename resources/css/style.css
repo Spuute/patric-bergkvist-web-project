@@ -179,7 +179,6 @@ nav {
   background: linear-gradient(to top right, #2980b9, #2c3e50);
   border-bottom: 1px solid white;
   height: 400px;
-  /*  text-align: center; */
 }
 
 .image-container {
@@ -272,7 +271,6 @@ nav {
   line-height: 110px;
   padding-top: 20px;
   font-weight: 100;
-  /* padding-right: 20px; */
   margin-bottom: 100px;
 }
 

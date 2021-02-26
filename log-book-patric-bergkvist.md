@@ -1,3 +1,7 @@
+## 2021-03-26 kl.13:12
+
+Jag är nu i princip helt färdig för skärminspelning av projektet. Jag tycker att det har gått väldigt bra genom hela projektet, jag har inte känt någongång att det tagit helt stop och jag inte haft en susning om hur jag ska lösa något problem. Jag är väldigt nöjd med min insats i det hela. Jag kommer lite senare att lägga till ett till inlägg här i loggboken med lite tankar om saker jag skulle kunna göra annorlunda.
+
 ## 2021-02-25 kl.08:15
 
 Jag valde att plocka bort dagens datum under stadens namn för jag tycker sidan ser bättre ut utan den.
