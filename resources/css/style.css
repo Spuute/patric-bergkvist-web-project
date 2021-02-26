@@ -16,6 +16,7 @@ html {
 
 body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/resources/css/img/bg.jpeg);
+  background: linear-gradient(to top right, #2980b9, #2c3e50);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -63,6 +64,7 @@ h3 {
   margin-top: 100px;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
+  -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   box-shadow: 2px 2px 50px #222;
   margin-bottom: 50px;
@@ -95,6 +97,7 @@ h3 {
   overflow-y: auto;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
+  -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   box-shadow: 0 10px 25px #222;
 }
@@ -335,6 +338,7 @@ nav {
 
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
+  -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   box-shadow: 2px 2px 50px #222;
 }
