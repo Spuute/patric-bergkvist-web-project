@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  background: linear-gradient(to top right, #2980b9, #2c3e50);
+  background: linear-gradient(to top right, #2980b9, #2c3e50); /* fallback color */
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./img/bg.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -228,7 +228,7 @@ nav {
 /* --------------------------------------------------- */
 
 .weather-box {
-  background: linear-gradient(to top right, #2980b9, #2c3e5050); /* Remove the last 50 */
+  background: linear-gradient(to top right, #2980b9, #2c3e50);
   margin-top: 100px;
   border-radius: 25px;
 }
