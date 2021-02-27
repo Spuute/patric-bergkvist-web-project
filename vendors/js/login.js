@@ -6,7 +6,7 @@ const oktaSignIn = new OktaSignIn({
   authParams: {
     issuer: "https://dev-54117136.okta.com/oauth2/default",
   },
-  redirectUri: "http://127.0.0.1:5501/",
+  redirectUri: "https://spuute.github.io/patric-bergkvist-web-project/weather.html",
 });
 
 oktaSignIn.authClient.token.getUserInfo().then(
